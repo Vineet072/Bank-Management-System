@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding:0 ;
+	background: url(bgabout2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	font-family: sans-serif;  
+}
+
+h3{
+	margin: 0;
+	padding: 0 0 20px;
+	color: orange;
+    margin-left: 20px;
+}
+
+h2{
+	margin: 0;
+	padding: 0 0 20px;
+	color: orange;
+    margin-left: 20px;
+}
+
+p{
+	margin: 0;
+	padding: 0 0 20px;
+	color:bisque;
+    display: inline-block;
+    margin-left: 20px;
+}

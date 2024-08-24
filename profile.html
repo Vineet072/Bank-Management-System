@@ -1,0 +1,257 @@
+<!--
+<html>
+    <head>
+        <title>Profile</title>
+        <script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+        <script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+        <style>
+        #e01
+        {
+            text-align: center;
+            color: #02273f;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            line-height: 1.2;
+            font-family: 'Georgia', sans-serif;
+        }
+        #e02 img
+        {
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10px;
+            width: 80px; 
+            height: 80px; 
+            align-items: center;
+            margin-top:20px;
+        }
+        #e02
+        {
+            text-align:center;
+        }
+        #e02 a,b
+        {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:25px;
+            font-weight:bold;
+        }
+        #e03
+        {
+            background-color: azure;
+        }
+        #e04 c
+        {
+            color: #02273f;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:30px;
+            margin-top:20px;
+           margin-left:30px;
+        }
+        #e04 f
+        {
+            color: #02273f;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:20px;
+            margin-left:50px;
+        }
+        #e04 g
+        {
+            color: #02273f;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:20px;
+            margin-left:160px;
+        }
+        #e04 h
+        {
+            color: #02273f;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:20px;
+            margin-left:190px;
+        }
+        #e04 e
+        {
+            color: #02273f;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:30px;
+            margin-left: 50px;
+        }
+        #e04 d
+        {
+            color: #02273f;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:30px;
+            margin-top:20px;
+            margin-left: 50px;
+        }
+        #e04
+        {
+            background-color: white;
+            border-radius: 32px;
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-left: 200;
+        }
+        </style>
+    </head>
+<body id="e03">
+    <div id="root"></div>
+    <script type="text/babel">
+        class Profile extends React.Component{
+            render(){
+                return  <div>
+                    <h1 id="e01">PROFILE PAGE</h1>
+                    <div id="e02">
+                    <img src="profile photo.png"></img>
+                    <br/>
+                    <a>Vundela Vipul kumar reddy</a>
+                    <br/>
+                    <b>798109999</b>
+                    </div>
+                    <div id="e04">
+                        <c>phone number:</c> 
+                        <d>Aadhar Number:</d>
+                        <e>PAN Number:</e>
+                        <br/>
+                        <f>483020202</f>
+                        <g>892728929</g>
+                        <h>8rh88428093</h>
+
+                    </div>
+                    </div>
+                }
+            }
+            ReactDOM.render(<Profile/>, document.getElementById("root"));
+    </script>
+</body>
+</html>
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #e01 {
+            text-align: center;
+            color: #02273f;
+            font-size: 2.5em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            line-height: 1.2;
+            font-family: 'Georgia', sans-serif;
+        }
+
+        #e02 img {
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80px;
+            height: 80px;
+        }
+
+        #e02 a, #e02 b {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        #e03 {
+            background-color: azure;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #e04 {
+            background-color: white;
+            border-radius: 32px;
+            width: 60%; /* Decrease the box size */
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 20px auto;
+        }
+
+        .info-section {
+            margin-bottom: 20px;
+        }
+
+        .info-section span {
+            font-family: 'Courier New', Courier, monospace; /* Change the font for numbers */
+        }
+
+        .info-section c span {
+            font-family: 'Contact', sans-serif; /* Change the font for Phone Number */
+        }
+
+        #e04 c span {
+            font-family: 'Arial', sans-serif; /* Change the font for Phone Number */
+            font-size: 20px; /* Decrease the font size for Phone Number */
+        }
+
+        #e04 e, #e04 d {
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace; /* Change the font for numbers */
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        class Profile extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <div id="e03">
+                            <h1 id="e01">PROFILE PAGE</h1>
+                            <div id="e02">
+                                <img src="profile photo.png" alt="Profile"></img>
+                                <a>Vundela Vipul Kumar Reddy</a>
+                                <b>798109999</b>
+                            </div>
+                        </div>
+                        <div id="e04">
+                            <div class="info-section">
+                                <c>Phone Number: <span>483020202</span></c>
+                            </div>
+                            <div class="info-section">
+                                <d>Aadhar Number: <span>892728929</span></d>
+                            </div>
+                            <div class="info-section">
+                                <e>PAN Number: <span>8rh88428093</span></e>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(<Profile />, document.getElementById("root"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+<html lang="en">
+<head>
+    <title>Loan Register</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+        #c01 {
+            border: hidden 10px;
+            background-color: azure;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #c02 {
+            text-align: center;
+            color: #02273f;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            line-height: 1.2;
+            font-family: 'Georgia', sans-serif;
+        }
+
+        #c03, #c04, #c05, #c06, #c07 {
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: initial;
+            font-weight: 300;
+            color: #02273f;
+        }
+
+        #loanAmount,
+        #borrowerName,
+        #borrowerPhNo,
+        #borrowerAdress,
+        #borrowerAnnualIncome {
+            padding: 8px;
+            height: 30px;
+            width: 100%;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        #form {
+            background-color: white;
+            border-radius: 32px;
+            max-width: 550px;
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #c08 {
+            font-size: 20px;
+            background-color: #02273f;
+            border: none;
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            cursor: pointer;
+            padding: 15px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #c08:hover {
+            background-color: orange;
+        }
+
+        #c09 {
+            font-size:20px;
+            background-color:#02273f;
+            border: none;
+            color: white;
+            text-align:center;
+            border-radius:50px;
+            cursor: pointer;
+            padding:10px;
+            margin-top: 10px;
+        }
+
+        #c09:hover {
+            background-color: orange;
+        }
+
+        #c10 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: #02273f;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body id="c01">
+    <div id="root"></div>
+    <script type="text/babel">
+        class LoanRegister extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <h1 id="c02">Loan Application Form</h1>
+                        <p id="c10">Please fill out the form below.</p>
+                        <form align="center" id="form">
+                            <label id="c03">Desired Loan Amount in Rupees:</label>
+                            <br/>
+                            <input type="number" id="loanAmount" name="loanAmount" pattern="[0-9]" />
+                            <br/><br/>
+                            <label id="c04">Borrower's Name:</label>
+                            <br/>
+                            <input type="text" id="borrowerName" name="borrowerName" />
+                            <br/><br/>
+                            <label id="c05">Borrower's Phone Number:</label>
+                            <br/>
+                            <input type="text" id="borrowerPhNo" name="borrowerPhNo" pattern="[0-9]"/>
+                            <br/><br/>
+                            <label id="c06">Borrower's Address:</label>
+                            <br/>
+                            <input type="text" id="borrowerAdress" name="borrowerAdress" />
+                            <br/><br/>
+                            <label id="c07">Borrower's Annual Income:</label>
+                            <br/>
+                            <input type="text" id="borrowerAnnualIncome" name="borrower Annual Income" />
+                            <br/><br/>
+                            <button type="submit" id="c08">Submit</button>
+                        </form>
+                        <a href="homepage.html"><button id="c09">Go to Home</button></a>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(<LoanRegister/>, document.getElementById("root"));
+    </script>
+</body>
+</html>

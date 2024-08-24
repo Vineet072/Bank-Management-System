@@ -1,0 +1,168 @@
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-color:azure;
+        }
+        h1 
+        {
+            text-align: center;
+            padding: 20px;
+            font-size:45px;
+            color:#02273f;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:bold;
+        }
+
+        form 
+        {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label 
+        {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"] 
+        {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] 
+        {
+            margin-right: 5px;
+            padding: 5px;
+        }
+
+        select 
+        {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"],
+        button[type="reset"] 
+        {
+            background-color:#02273f;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;        
+        }
+
+
+        #id04 b 
+        {
+            font-weight: bold;
+        }
+        
+        button[type="submit"]:hover,
+        button[type="reset"]:hover
+        {
+            background-color:orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Applicant details</h1>
+    <div>
+        <form method="post" action="http://localhost:3000/submit-form" target="_blank">
+            <label>
+                <input id="register_id01" type="radio" name="accountType" value="Saving acccount"> Saving account
+                <input id="register_id02" type="radio" name="accountType" value="Current acccount"> Current account
+            </label>
+            <label>
+                <input id="register_id03" type="text" placeholder="Aadhaar Number*" maxlength="12" pattern="[0-9]{12}" name="aadhaarNumber" required>
+            </label>
+            <label id="id04">
+                <b>I hereby provide my voluntary consent to Spice Bank to use the Aadhaar details provided by me for
+                    authentication and agree to the terms and conditions related to Aadhaar consent and updation.</b>
+            </label>
+            <label>
+                <select id="register_id05" name="salutation" required>
+                    <option value="" disabled selected>Salutation*</option>
+                    <option value="mr">Mr.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="dr">Dr.</option>
+                    <option value="other">Other</option>
+                </select>
+                <input id="register_fullName" type="text" placeholder="Full Name*" name="fullName" required>
+            </label>
+            <label>
+                Gender*:
+                <input id="register_male" type="radio" name="gender" value="M"> Male
+                <input id="register_female" type="radio" name="gender" value="F"> Female
+                <input id="register_other" type="radio" name="gender" value="O"> Other
+            </label>
+            <label>
+                <input id="register_fatherName" type="text" placeholder="Father Name*" name="fatherName" required>
+            </label>
+            <label>
+                <input id="register_motherName" type="text" placeholder="Mother Name*" name="motherName" required>
+            </label>
+            <label>
+                <input id="register_dob" type="date" placeholder="Date of Birth*" name="dob" required>
+            </label>
+            <label>
+                <input id="register_mobileNumber" type="tel" placeholder="Mobile Number*" maxlength="10" pattern="[6-9]{1}[0-9]{9}" name="mobileNumber" required>
+            </label>
+            <label>
+                <input id="register_email" type="email" placeholder="Email ID*" name="email" required>
+            </label>
+            <label>
+                <input id="register_panNumber" type="text" placeholder="PAN Number*" maxlength="10" name="panNumber">
+            </label>
+            <label>
+                <input id="register_password" type="password" placeholder="Password*" name="password" required>
+            </label>
+            <label>
+                <input id="register_confirmPassword" type="password" placeholder="Confirm Password*" name="confirmPassword" required>
+            </label>
+            <label>
+                <select id="register_state" name="state" required>
+                    <option value="" disabled selected>State*</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                </select>
+            </label>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>

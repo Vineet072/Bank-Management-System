@@ -1,0 +1,134 @@
+<html>
+    <head >
+        <style>
+            #head1
+            {
+                text-align: center;
+                color: #02273f; 
+                font-size: 2.5em; 
+                margin-bottom: 40px;
+                text-transform: uppercase; 
+                letter-spacing: 2px; 
+                font-weight: bold; 
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+                line-height:1.2;
+                font-family:'Georgia', sans-serif;
+            }
+            #a02
+            {
+                font-size:40px;
+                color:black;
+                font-weight: bold;
+            }
+            #a03
+            {
+                font-size:80px;
+                color:brown;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            #a04
+            {
+                font-size:40px;
+                color:black;
+                font-weight:medium;
+            }
+            #a05
+            {
+                font-size:20px;
+                background-color:orange;
+                border:none;
+                padding:8px;
+                color:white;
+                text-align: center;
+                margin-right: 20px;
+                border-radius: 50px;
+                cursor:pointer;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            #a05:hover
+            {
+                background-color:#02273f;
+            }
+            #a06
+            {
+                font-size:20px;
+                background-color:orange;
+                border:none;
+                padding:8px;
+                color:white;
+                text-align: center;
+                border-radius:50px;
+                cursor:pointer;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            #a06:hover
+            {
+                background-color:02273f;
+            }
+            #a07
+            {
+                width:500px;
+                height:500px;  
+                float:right;
+                margin-right:210px;
+            }
+            #a08
+            {
+                font-family:initial;
+                font-size: 35px;
+                font-weight:bold;
+                color:#02273f;
+            }
+            #a09
+            {
+                border:hidden 10px;
+                background-color:azure;
+            }
+        </style>
+        <h1 id="head1">Contact us</h1>
+        <title>Contact Us</title>
+        <script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+        <script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+    </head>
+<body id="a09">
+    <div id="a01"></div>
+    <script type="text/babel">
+        class Contact extends React.Component{
+            render(){
+                return  <div>
+                <e id="a02">Your Neighbourhood bank </e>
+                <img src="aboutus2.jpg" id="a07"></img>
+                <div id="a03">
+                <c>We're next door</c><br/>
+                <d>& here for you.</d>
+                </div>
+                <div id="a04">
+                <f>Online on the phone,or in one of our local</f>
+                <br/>
+                <g>bank branches.We're here to help you write</g>
+                <br/>
+                <k>your story.</k>
+                </div>
+                <p id="a08">Contact Us through:-</p>
+                <select id="a05"> 
+                <option>call</option>  
+                <option>7981082773</option>
+                <option>9441801210</option>
+                <option>7033431065</option>
+                </select>
+                <select id="a06"> 
+                <option>Branches</option>  
+                <option>Bengaluru</option>
+                <option>Tumkur</option>
+                <option>Davangere</option>
+                <option>Hassan</option>
+                </select>
+                </div>
+            }
+        }
+        ReactDOM.render(<Contact/>,document.getElementById("a01"));
+    </script>
+</body>
+</html>
